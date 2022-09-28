@@ -6,8 +6,9 @@ import java.util.List;
 /**
  * Created by Minguin on 2022/09/28.
  */
-public class BubbleSort<T extends Comparable<T>>  {
+public class BubbleSort<T extends Comparable<T>> implements Sort<T> {
 
+    @Override
     public List<T> sort(List<T> list){
         List<T> output = new ArrayList<>(list);
 
